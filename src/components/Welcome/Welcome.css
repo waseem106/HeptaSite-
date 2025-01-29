@@ -1,0 +1,127 @@
+.welcome{
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 90px;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 4px solid black; */
+    
+
+}
+.left img{
+        height: 100%;
+        width: 100%;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: flex-start;
+    line-height: 1.5;
+    /* border: 4px solid black; */
+    
+}
+
+.right .watch-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.right .icon{
+    width: 20x;
+    height: 20px;
+    border-radius:  50%;
+    padding: 13px;
+    font-size: small;
+    border: 2px solid #9f9d9dd3;
+    color: #65C0BA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right .icon:hover{
+    color:black;
+    border: 2px solid black;
+}
+
+.right h1{
+line-height: 3;
+}
+.right p{
+    line-height: 2;
+    font-size: 20px;
+    color:#808080;
+    font-weight: 100;
+}
+.right a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #65C0BA;
+    font-weight: 600;
+}
+
+
+@media (max-width:600px)
+{
+    .welcome{
+        width: 100vw;
+        min-height: auto;
+        flex-direction: column;
+        padding: 4vw;
+        padding-top: 8vh;
+        margin-bottom: 8vh;
+        
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    .right h1{
+        line-height: 1.5;
+        }
+
+        .right p{
+            line-height: 2;
+            font-size: 17px;
+            color:#808080;
+            font-weight: 100;
+        }
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+
+    .right .icon{
+        width: 20x;
+        height: 20px;
+        padding: 2vh;
+        font-size: small;
+        
+       
+    }
+
+    .right .watch-icon{
+       margin-top: 4vh;
+       font-size: 17px;
+    }
+}

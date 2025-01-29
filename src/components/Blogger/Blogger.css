@@ -1,0 +1,127 @@
+.Blogger{
+    height: auto;
+    width: 100%;
+    padding: 0 7% 7% 7% ;
+    background-color: #65C0BA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    
+    
+    
+    
+}
+
+.heading{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading h1{
+    font-weight: 800;
+    font-size: 66px;
+    
+}
+.heading p {
+    color:white;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+.cardItem{
+background-color: white;
+height: auto;
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: left;
+justify-content: center;
+box-sizing: border-box;
+
+}
+
+.cardItem img{
+    height: auto;
+    width: 100%;
+}
+.cardItem h3{
+padding-top: 23px;
+padding-left:  15px;
+color:#808080;
+}
+
+.cardItem h2{
+    padding-top: 10px;
+    padding-left:  15px;
+    width: 80%;
+    font-weight: bolder;
+}
+.cardItem p{
+    color:#808080;
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+
+
+
+@media(max-width:600px)
+{
+
+   
+    .Blogger{
+        padding: 1%;
+    }
+
+    .heading{
+
+        padding-top: 40px;
+        height: auto;
+        width: 90%;
+    }
+
+    .heading h1{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .card {
+        flex-direction: column;     
+        align-items: center;
+    }
+
+    .cardItem {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+}
+
+/*  */
+
+
+
+

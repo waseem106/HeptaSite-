@@ -1,0 +1,41 @@
+.slider{
+    width: 100%;
+    height: auto;
+    padding: 7% 7% 0 7% ;
+    position: relative;
+}
+.styledborder {
+    position: relative; 
+    height: auto; 
+    width: auto; 
+    height: 230px;
+    
+}
+
+.styledborder::before {
+    content: ""; 
+    position: absolute; 
+    top: -200px; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: #65C0BA; 
+    border-radius: 100% 0% 100% 0% / 25% 100% 0% 75%; 
+    z-index: -1; 
+}
+
+
+
+
+
+@media (max-width:600px)
+{
+    .slider{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 7% 7% 0 7%;
+        
+        
+    }
+}

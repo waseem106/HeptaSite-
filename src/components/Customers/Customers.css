@@ -1,0 +1,100 @@
+.customers{
+    width: 100%;
+    height: auto;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.customers h1{
+    font-family :"Abril Fatface";
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.card{
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;  
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.carditem{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
+
+}
+
+.carditem img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.carditem p{
+    line-height: 30px;
+    padding-top: 15px;
+    font-style: italic;
+    font-size: 20px;
+    color:black;
+    font-weight:lighter;
+    font-family: 'Mukta Mahee';
+
+}
+
+.carditem h4{
+    padding-top: 10px;
+    font-style: italic;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    color:#808080;
+}
+
+
+
+@media(max-width:600px)
+{
+
+    .customers{
+        width: 100%;
+        height: auto;
+        padding: 1%;
+        box-sizing: border-box;
+    
+    }
+
+    .customers h1{
+        text-align: center;
+        font-size: 32px;
+        width: 100%;
+        
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+    }
+    .carditem{
+        width: 100vw;
+        height: auto;
+        align-items: center;
+    }
+
+  
+   
+
+}

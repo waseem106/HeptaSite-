@@ -1,0 +1,108 @@
+.Blogger {
+    height: auto;
+    width: 100%; /* Full width of the parent */
+    padding: 7%; /* Padding can be adjusted as needed */
+    background-color: #65C0BA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.heading {
+    height: auto; /* Allow height to adjust based on content */
+    width: 90%; /* Use a percentage to ensure responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-weight: 800;
+    font-size: 66px;
+}
+
+.heading p {
+    color: white;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Full width of the parent */
+    display: flex;
+    flex-direction: row; /* Default to row for larger screens */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.cardItem {
+    background-color: white;
+    height: auto; /* Allow height to adjust based on content */
+    width: 30%; /* Default width for larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+.cardItem img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Full width of the card */
+}
+
+.cardItem h3 {
+    padding-top: 23px;
+    padding-left: 15px;
+    color: #808080;
+}
+
+.cardItem h2 {
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 80%; /* Use a percentage to ensure responsiveness */
+    font-weight: bolder;
+}
+
+.cardItem p {
+    color: #808080;
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media(max-width: 600px) {
+    .Blogger {
+        padding: 1%; /* Adjust padding for mobile */
+    }
+
+    .heading {
+        padding-top: 40px;
+        height: auto; /* Allow height to adjust based on content */
+        width: 90%; /* Use a percentage to ensure responsiveness */
+    }
+
+    .heading h1 {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    .card {
+        flex-direction: column; /* Stack cards vertically on mobile */
+        align-items: center; /* Center items */ 
+    }
+
+    .cardItem {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 20px; /* Space between cards */
+    }
+}

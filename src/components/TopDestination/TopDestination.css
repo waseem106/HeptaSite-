@@ -1,0 +1,112 @@
+.TopDestination{
+    height:auto;
+    width: 100%;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.details{
+    width: 68%;
+    height: 50%;
+    text-align:center;
+    
+}
+
+.details p{
+    font-size: 20px;
+    font-family:"Mukta Mahee";
+}
+
+
+.cards{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 9vh;
+   
+}
+
+.card-item{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card-item img{
+    height: 170px;
+    width: 260px;
+    border-radius: 2px;
+}
+.card-item h3{
+    margin-top: 10px;
+    font-family:"Abril Fatface";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.starsdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.stars{
+    color:#65C0BA;
+    font-size: 13px;
+}
+.empty-star{
+    font-size: 13px;
+    color:#65C0BA;
+    
+}
+
+.starsdiv p{
+    margin-left: 7vw;
+    color:#808080;
+    font-style: italic;
+}
+
+
+@media(max-width:600px)
+{
+    .TopDestination{
+        height:auto;
+        width: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+    }   
+
+    .details{
+        width: 100vw;
+        height: auto;
+    }
+    .cards{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .card-item{
+        width: 100%;
+        height: auto;
+        align-items: center;
+       
+    }
+    .card-item img{
+        height: auto;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+   
+}
